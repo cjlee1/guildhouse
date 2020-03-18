@@ -1,10 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## To Run
-'git clone repo'
+
+### 'git clone repo'
 then
-'cd in repo'
+### 'cd in repo'
 then type
-'yarn'
+### 'yarn'
 to update
 
 
