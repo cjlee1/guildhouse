@@ -27,8 +27,8 @@ export default Footer;
 const FooterContainer = styled.footer`
     ul{
         background: #020101;
-        background: radial-gradient(rgba(0,0,0,0), rgba(0,0.5,0,0.7)),
-     no-repeat center center/cover;
+        background: radial-gradient(rgba(0, 0, 0, 0.44),
+        rgba(0, 1, 0, 0.75)), no-repeat center center/cover;
         position:relative;
         right:0;
         margin-top:0;
