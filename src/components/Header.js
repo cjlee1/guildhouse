@@ -8,7 +8,7 @@ class Header extends Component {
     return (
         <HeaderComponent className="header-container"> 
            <div className= "header-top">
-                <Logo className="logo" src={logo} alt="Guildhouse">     
+                <Logo className="logo" alt="Guildhouse">     
                     
                     
                 </Logo>
@@ -29,11 +29,14 @@ export default Header;
 
 // Logo
 const Logo= styled.img`
-    width:20em;
+    // width:20em; if logo is not there
     height:5rem;
     position:absolute;
     top:25%;
     left:50%;
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
     transform: translate(-50%,-50%);
 `;
 
@@ -51,7 +54,9 @@ const HeaderComponent = styled.header`
     position: absolute;
     translate: transform(-50%, -50%);
     cursor: pointer;
-    transition: background 0.2s ease-in; 
+    transition: background 0.2s ease-in;
+    font-family: 'Helvetica Bold', sans-serif;
+    font-weight: 700; 
     &:hover {
         background: var(--main-yellow-hover);
       }
@@ -78,6 +83,8 @@ const HeaderComponent = styled.header`
     //content buttons
     .compendium,.hero-Roster{
         display: inline-block;
+        font-family: 'Helvetica Bold', sans-serif;
+        font-weight: 700;
         background: var(--main-yellow);
         border:none;
         outline:none;
