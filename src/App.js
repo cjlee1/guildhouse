@@ -5,7 +5,7 @@ import Main from './pages/main'
 import { Switch, Route } from 'react-router-dom';
 import Compendium from './pages/compendium/Compendium';
 import Hero from './pages/hero/Hero';
-import Abilities from './pages/compendium/components/Abilities';
+import Abilities from './pages/compendium/views/Abilities';
 function App() {
   return (
     <div>
@@ -13,6 +13,8 @@ function App() {
         <Route exact path="/" component={Main}/>
         <Route path ="/compendium" component={Compendium}/>
         <Route path ="/hero" component={Hero}/>
+        <Route path ="/abilities" component={Abilities}/>
+
       </Switch>
     </div>
     
