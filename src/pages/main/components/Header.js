@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import styled from "styled-components";
 
-import logo from '../images/Logo.png'; 
+import logo from '../../../images/Logo.png'; 
 
 // Media query
 // import {generateMedia} from "styled-media-query";

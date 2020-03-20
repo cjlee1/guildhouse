@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {NavLink,Link} from 'react-router-dom';
 import styled from "styled-components";
-import image from '../images/house.jpg';
+import image from '../../../images/house.jpg';
  class Footer extends Component {
   render() {
     return (

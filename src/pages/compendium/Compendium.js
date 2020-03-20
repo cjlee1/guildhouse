@@ -15,10 +15,10 @@ class Compendium extends Component {
         <Grid>
           <Row>
             <Col size={2}>
-              <NavLink to="/" className="how-to-play">HOW TO PLAY</NavLink>
+              <NavLink to="/abilities" className="how-to-play">HOW TO PLAY</NavLink>
             </Col>
             <Col size={2}>
-              <NavLink to="/" className="abilities">ABILITIES</NavLink>
+              <NavLink to="/abilities" className="abilities">ABILITIES</NavLink>
             </Col>
           </Row>
           <Row>

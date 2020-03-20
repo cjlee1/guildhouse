@@ -5,7 +5,7 @@ import Main from './pages/main'
 import { Switch, Route } from 'react-router-dom';
 import Compendium from './pages/compendium/Compendium';
 import Hero from './pages/hero/Hero';
-
+import Abilities from './pages/compendium/components/Abilities';
 function App() {
   return (
     <div>
