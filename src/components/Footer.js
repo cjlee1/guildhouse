@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink,Link} from 'react-router-dom';
 import styled from "styled-components";
 import image from '../images/house.jpg';
  class Footer extends Component {
@@ -10,10 +10,10 @@ import image from '../images/house.jpg';
             <div> 
                 <div className="footer-Columns">
                     <ul>
-                        <Link className="options-btn">options</Link>
-                        <Link className="about-btn">about</Link>
-                        <Link className="help-btn">help</Link>
-                        <Link className="support-btn">support us</Link>
+                        <NavLink className="options-btn">options</NavLink>
+                        <NavLink className="about-btn">about</NavLink>
+                        <NavLink className="help-btn">help</NavLink>
+                        <NavLink className="support-btn">support us</NavLink>
 
                     </ul>
                 

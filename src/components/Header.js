@@ -22,7 +22,7 @@ class Header extends Component {
            {/* header content */}
            <div className= "header-content">
                 <NavLink to="/compendium" className="compendium">COMPENDIUM</NavLink>
-                <Link to="/hero" className="hero-Roster">HERO ROSTER</Link>
+                <NavLink to="/hero" className="hero-Roster">HERO ROSTER</NavLink>
            </div>
         </HeaderComponent>
     );
