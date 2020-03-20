@@ -13,6 +13,7 @@ function App() {
         <Route exact path="/" component={Main}/>
         <Route path ="/compendium" component={Compendium}/>
         <Route path ="/hero" component={Hero}/>
+        <Route path ="/abilities" component={Abilities}/>
       </Switch>
     </div>
     
