@@ -10,10 +10,10 @@ import image from '../images/house.jpg';
             <div> 
                 <div className="footer-Columns">
                     <ul>
-                        <NavLink className="options-btn">options</NavLink>
-                        <NavLink className="about-btn">about</NavLink>
-                        <NavLink className="help-btn">help</NavLink>
-                        <NavLink className="support-btn">support us</NavLink>
+                        <NavLink to="/" className="options-btn">options</NavLink>
+                        <NavLink to="/" className="about-btn">about</NavLink>
+                        <NavLink to="/" className="help-btn">help</NavLink>
+                        <NavLink to="/" className="support-btn">support us</NavLink>
 
                     </ul>
                 

@@ -5,7 +5,7 @@ import styled from "styled-components";
 import logo from '../images/Logo.png'; 
 
 // Media query
-import {generateMedia} from "styled-media-query";
+// import {generateMedia} from "styled-media-query";
 class Header extends Component {
   render() {
     return (
