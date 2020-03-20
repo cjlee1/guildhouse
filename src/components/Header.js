@@ -3,6 +3,9 @@ import { NavLink, Link } from 'react-router-dom';
 import styled from "styled-components";
 
 import logo from '../images/Logo.png'; 
+
+// Media query
+import {generateMedia} from "styled-media-query";
 class Header extends Component {
   render() {
     return (
@@ -12,14 +15,14 @@ class Header extends Component {
                     
                     
                 </Logo>
-                <NavLink to="/" className="changelog-Btn">VIEW CHANGELOG</NavLink>
+                <NavLink to="/compendium" className="changelog-Btn">VIEW CHANGELOG</NavLink>
                 {/* img src={logo} */}
                 {/* logo could go here( svg file) */}
            </div>
            {/* header content */}
            <div className= "header-content">
-                <Link className="compendium">COMPENDIUM</Link>
-                <Link className="hero-Roster">HERO ROSTER</Link>
+                <NavLink to="/compendium" className="compendium">COMPENDIUM</NavLink>
+                <Link to="/hero" className="hero-Roster">HERO ROSTER</Link>
            </div>
         </HeaderComponent>
     );
