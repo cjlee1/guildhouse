@@ -3,22 +3,22 @@ import React, { Component } from 'react';
 import logo from '../../../images/Logo.png'; 
 import styled from "styled-components";
 
-class Abilities extends Component {
+class NarrativeTools extends Component {
   render() {
     return (
      
 
-    <div className="main-abilities-container"> 
+    <div className="main-narrative-tools-container"> 
         <div className="header-top">
             <img  alt="Guildhouse" className="Logo" />
-            <h1>fffffffffff</h1>
+            <h1>Narrative Tools</h1>
         </div>
 
     </div>
     );
   }
 }
-export default Abilities; 
+export default NarrativeTools; 
 //Header Container
 const HeaderComponent = styled.header`
     .changelog-Btn {

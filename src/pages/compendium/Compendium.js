@@ -15,7 +15,7 @@ class Compendium extends Component {
         <Grid>
           <Row>
             <Col size={2}>
-              <NavLink to="/abilities" className="how-to-play">HOW TO PLAY</NavLink>
+              <NavLink to="/howtoplay" className="how-to-play">HOW TO PLAY</NavLink>
             </Col>
             <Col size={2}>
               <NavLink to="/abilities" className="abilities">ABILITIES</NavLink>
@@ -23,10 +23,10 @@ class Compendium extends Component {
           </Row>
           <Row>
             <Col size={2}>
-              <NavLink to="/" className="how-to-play">NARRATIVE TOOLS</NavLink>
+              <NavLink to="/narrativetools" className="how-to-play">NARRATIVE TOOLS</NavLink>
             </Col>
             <Col size={2}>
-              <NavLink to="/" className="abilities">EQUIPMENT</NavLink>
+              <NavLink to="/equipment" className="abilities">EQUIPMENT</NavLink>
             </Col>
           </Row>
         </Grid>

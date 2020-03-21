@@ -7,9 +7,12 @@
     "@testing-library/react": "^10.0.1",
     "@testing-library/user-event": "^10.0.0",
     "react": "^16.13.0",
+    "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.13.0",
+    "react-lorem-ipsum": "^1.4.4",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
+    "react-web-tabs": "^1.0.1",
     "styled-components": "^5.0.1",
     "styled-media-query": "^2.1.2"
   },
