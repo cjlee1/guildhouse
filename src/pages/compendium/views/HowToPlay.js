@@ -6,6 +6,14 @@ import { Tab, TabPanel, Tabs, TabList } from "react-web-tabs";
 import "../../../css/Tab.css";
 import { LoremIpsum } from 'react-lorem-ipsum';
 
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from 'react-accessible-accordion';
+import 'react-accessible-accordion/dist/fancy-example.css';
 class HowToPlay extends Component {
   render() {
     return (
@@ -26,7 +34,29 @@ class HowToPlay extends Component {
       </TabList>
 
       <TabPanel tabId="vertical-tab-one">
-        <LoremIpsum p={9} />      
+      <Accordion allowZeroExpanded= "true" >
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        What harsh truths do you prefer to ignore?
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                  <LoremIpsum p={2} />  
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        Is free will real or just an illusion?
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                  <LoremIpsum p={3} />  
+                </AccordionItemPanel>
+            </AccordionItem>
+        </Accordion>
+            
       </TabPanel>
 
       <TabPanel tabId="vertical-tab-two">

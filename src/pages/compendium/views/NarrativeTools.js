@@ -2,51 +2,134 @@
 import React, { Component } from 'react';
 import logo from '../../../images/Logo.png'; 
 import styled from "styled-components";
+import { Tab, TabPanel, Tabs, TabList } from "react-web-tabs";
+import "../../../css/Tab.css";
+import { LoremIpsum } from 'react-lorem-ipsum';
+
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from 'react-accessible-accordion';
+import 'react-accessible-accordion/dist/fancy-example.css';
 
 class NarrativeTools extends Component {
   render() {
     return (
      
 
-    <div className="main-narrative-tools-container"> 
-        <div className="header-top">
-            <img  alt="Guildhouse" className="Logo" />
-            <h1>Narrative Tools</h1>
-        </div>
+     <div className="main-narrative-tools-container"> 
+        <HeaderComponent className="header-top">
+            <Logo  alt="Guildhouse" className="Logo" >
+            </Logo>
+        </HeaderComponent>
+        <Content>
+        <h1 className="narrative-header">Narrative Tools</h1>    
 
+        <Tabs defaultTab="vertical-tab-one" vertical className="vertical-tabs">
+      <TabList>
+        <Tab tabFor="vertical-tab-one">Vocations</Tab>
+        <Tab tabFor="vertical-tab-two">Adventurer Tools</Tab>
+        <Tab tabFor="vertical-tab-three">Tab 3</Tab>
+      </TabList>
+
+      <TabPanel tabId="vertical-tab-one">
+      <Accordion allowZeroExpanded= "true" >
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        Adventurer
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                  <LoremIpsum p={2} />  
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        Sailor
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                  <LoremIpsum p={3} />  
+                </AccordionItemPanel>
+            </AccordionItem>
+        </Accordion>
+            
+      </TabPanel>
+
+      <TabPanel tabId="vertical-tab-two">
+        <p>Tab content</p>
+      </TabPanel>
+
+      <TabPanel tabId="vertical-tab-three">
+        <p>Tab 3 content</p>
+      </TabPanel>
+    </Tabs>
+        </Content>
     </div>
     );
   }
 }
 export default NarrativeTools; 
+//Logo
+const Logo= styled.img`
+    // width:20em; if logo is not there
+    height:5rem;
+    position:absolute;
+    left:50%;
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    transform: translate(-50%,-5%);
+`;
 //Header Container
 const HeaderComponent = styled.header`
-    .changelog-Btn {
-    right: 0;
-    margin: 1.125rem 3% 0;
-    padding: 0.4375rem 1.0625rem;
-    font-wight: 400;
-    line-height: normal;
-    border-radius: 0.1875rem;
-    font-size: 1rem;
-    background: var(--main-yellow);
-    position: absolute;
-    translate: transform(-50%, -50%);
-    cursor: pointer;
-    transition: background 0.2s ease-in;
-    font-family: 'Helvetica Bold', sans-serif;
-    font-weight: 700; 
-    &:hover {
-        background: var(--main-yellow-hover);
-      }
 
-    }
-    //Header top
-    .header-top{
+    // header content
+    .header-content{
+        width: 65%;
         position:relative;
-        height:9rem;
+        margin: 4.5rem auto 0;
+        display:flex;
+        justify-content:center;
+        align-content: center;
+        text-align:center;
+        flex-direction:column;
         z-index:1;
     }
+    
+    }
+    
+`;
+//content
+const Content = styled.body`
+    .narrative-header{
+        top:8%;
+        left:50%;
+        position:absolute;
+        text-align:center;
+        transform: translate(-50%,-5%);
+
+    }
+    .vertical-tabs{
+        top:15%;
+        position: absolute;
+        
+    }
+   
+   
+
+    button:hover{
+        cursor:pointer;
+        background: var(--main-yellow);
+   
+        
+    }
+
     // header content
     .header-content{
         width: 65%;
@@ -60,7 +143,7 @@ const HeaderComponent = styled.header`
         z-index:1;
     }
     //content buttons
-    .compendium,.hero-Roster{
+    .abilities,.how-to-play{
         display: inline-block;
         font-family: 'Helvetica Bold', sans-serif;
         font-weight: 700;
