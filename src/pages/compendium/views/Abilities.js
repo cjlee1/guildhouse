@@ -8,7 +8,7 @@ class Abilities extends Component {
     return (
      
 
-    <div className="main-Hero-container"> 
+    <div className="main-abilities-container"> 
         <div className="header-top">
             <img  alt="Guildhouse" className="Logo" />
             <h1>fffffffffff</h1>

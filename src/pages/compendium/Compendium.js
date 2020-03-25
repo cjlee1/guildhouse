@@ -2,20 +2,30 @@ import React, { Component } from 'react';
 import logo from '../../images/Logo.png'; 
 import { NavLink, Link } from 'react-router-dom';
 import styled from "styled-components";
+import { IconContext } from "react-icons";
+// import '@fortawesome/fontawesome-svg-core/styles.css';
+import {  FaArrowLeft, FaArrowRight, FaHome, FaBookOpen ,FaMandalorian} from "react-icons/fa";
+import { createBrowserHistory } from 'history';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import "../../css/Header.css";
+import HeaderTop from './components/HeaderTop';
+
+
+config.autoAddCss = true;
 
 class Compendium extends Component {
+ 
   render() {
     return (
     <HeaderComponent className="main-compendium-container"> 
       <div className="header-top">
-        <Logo  className="logo" alt="Guildhouse"> 
-        </Logo>
+        <HeaderTop/>
       </div>
       <Content>
         <Grid>
           <Row>
             <Col size={2}>
-              <NavLink to="/abilities" className="how-to-play">HOW TO PLAY</NavLink>
+              <NavLink to="/howtoplay" className="how-to-play">HOW TO PLAY</NavLink>
             </Col>
             <Col size={2}>
               <NavLink to="/abilities" className="abilities">ABILITIES</NavLink>
@@ -23,10 +33,10 @@ class Compendium extends Component {
           </Row>
           <Row>
             <Col size={2}>
-              <NavLink to="/" className="how-to-play">NARRATIVE TOOLS</NavLink>
+              <NavLink to="/narrativetools" className="how-to-play">NARRATIVE TOOLS</NavLink>
             </Col>
             <Col size={2}>
-              <NavLink to="/" className="abilities">EQUIPMENT</NavLink>
+              <NavLink to="/equipment" className="abilities">EQUIPMENT</NavLink>
             </Col>
           </Row>
         </Grid>
