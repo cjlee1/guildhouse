@@ -15,52 +15,53 @@ import {
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { NavLink,Link } from 'react-router-dom';
+import HeaderTop from '../components/HeaderTop';
+
 
 class NarrativeTools extends Component {
   render() {
     return (
      
 
-     <div className="main-narrative-tools-container"> 
-        <HeaderComponent className="header-top">
-          <NavLink to="/"><Logo  alt="Guildhouse" className="Logo" >
-            </Logo>
-          </NavLink>
-        </HeaderComponent>
-        <Content>
-        <h1 className="narrative-header">Narrative Tools</h1>    
+    <HeaderComponent className="main-narrative-tools-container"> 
+          
+      <div className="header-top">
+        <HeaderTop/>
+      </div>
+        
+      <Content>
+      <h1 className="narrative-header">Narrative Tools</h1>    
 
-        <Tabs defaultTab="vertical-tab-one" vertical className="vertical-tabs">
-      <TabList>
-        <Tab tabFor="vertical-tab-one">Vocations</Tab>
-        <Tab tabFor="vertical-tab-two">Adventurer Tools</Tab>
-        <Tab tabFor="vertical-tab-three">Tab 3</Tab>
-      </TabList>
+      <Tabs defaultTab="vertical-tab-one" vertical className="vertical-tabs">
+        <TabList>
+          <Tab tabFor="vertical-tab-one">Vocations</Tab>
+          <Tab tabFor="vertical-tab-two">Adventurer Tools</Tab>
+          <Tab tabFor="vertical-tab-three">Tab 3</Tab>
+        </TabList>
 
       <TabPanel tabId="vertical-tab-one">
-      <Accordion allowZeroExpanded= "true" >
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        Adventurer
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                  <LoremIpsum p={2} />  
-                </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        Sailor
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                  <LoremIpsum p={3} />  
-                </AccordionItemPanel>
-            </AccordionItem>
-        </Accordion>
-            
+        <Accordion allowZeroExpanded= "true" >
+          <AccordionItem>
+              <AccordionItemHeading>
+                  <AccordionItemButton>
+                      Adventurer
+                  </AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel>
+                <LoremIpsum p={2} />  
+              </AccordionItemPanel>
+          </AccordionItem>
+          <AccordionItem>
+              <AccordionItemHeading>
+                  <AccordionItemButton>
+                      Sailor
+                  </AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel>
+                <LoremIpsum p={3} />  
+              </AccordionItemPanel>
+          </AccordionItem>
+        </Accordion>     
       </TabPanel>
 
       <TabPanel tabId="vertical-tab-two">
@@ -72,7 +73,7 @@ class NarrativeTools extends Component {
       </TabPanel>
     </Tabs>
         </Content>
-    </div>
+    </HeaderComponent>
     );
   }
 }
@@ -104,6 +105,11 @@ const HeaderComponent = styled.header`
         z-index:1;
     }
     
+    //Header top
+    .header-top{
+        position:relative;
+        height:9rem;
+        z-index:1;
     }
     
 `;

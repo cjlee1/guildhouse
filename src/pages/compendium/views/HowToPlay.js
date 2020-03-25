@@ -15,84 +15,67 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
-import { NavLink,Link } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
-import {  IoIosArrowBack, IoIosArrowForward, IoIosHome } from "react-icons/io";
-import { IconContext } from "react-icons";
+
+import HeaderTop from '../components/HeaderTop';
 
 class HowToPlay extends Component {
-  constructor(props){
-    super(props);
-    this.goNext = this.goNext.bind(this);
-    this.goBack = this.goBack.bind(this); // i think you are missing this
- }
- goNext(){
-  this.props.history.goForward();
-  alert(this.props.history.goForward());
-}
- goBack(){
-     this.props.history.goBack();
- }
+
   render() {
     return (
      
       
-    <div className="main-how-to-play-container"> 
-        <HeaderComponent className="header-top">
-        <IconContext.Provider value={{ color: "white", className: "global-class-name" }}>
-          <IoIosArrowBack onClick={this.goBack}   />
-          <IoIosArrowForward onClick={this.goNext} />
-          <IoIosHome />
-      </IconContext.Provider>
-          <NavLink to="/compendium"><Logo  alt="Guildhouse" className="Logo" >
-            </Logo>
-          </NavLink>
-        </HeaderComponent>
-        <Content>
+    <HeaderComponent className="main-how-to-play-container"> 
         
+      <div className="header-top">
+        <HeaderTop/>
+      </div>
+
+      <Content>
+        <h1 className="narrative-header">Narrative Tools</h1>    
+
         <Tabs defaultTab="vertical-tab-one" vertical className="vertical-tabs">
-      <TabList>
-        <Tab tabFor="vertical-tab-one">Narrative Rules</Tab>
-        <Tab tabFor="vertical-tab-two">Tab 2</Tab>
-        <Tab tabFor="vertical-tab-three">Tab 3</Tab>
-      </TabList>
+          <TabList>
+            <Tab tabFor="vertical-tab-one">Narrative Rules</Tab>
+            <Tab tabFor="vertical-tab-two">Tab 2</Tab>
+            <Tab tabFor="vertical-tab-three">Tab 3</Tab>
+          </TabList>
 
-      <TabPanel tabId="vertical-tab-one">
-      <Accordion allowZeroExpanded= "true" >
-            <AccordionItem>
+          <TabPanel tabId="vertical-tab-one">
+            <Accordion allowZeroExpanded= "true" >
+              <AccordionItem>
                 <AccordionItemHeading>
-                    <AccordionItemButton>
-                        What harsh truths do you prefer to ignore?
-                    </AccordionItemButton>
+                  <AccordionItemButton>
+                    What harsh truths do you prefer to ignore?
+                  </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                  <LoremIpsum p={2} />  
-                </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        Is free will real or just an illusion?
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                  <LoremIpsum p={3} />  
-                </AccordionItemPanel>
-            </AccordionItem>
-        </Accordion>
-            
-      </TabPanel>
+                  <AccordionItemPanel>
+                    <LoremIpsum p={2} />  
+                  </AccordionItemPanel>
+              </AccordionItem>
+              <AccordionItem>
+                  <AccordionItemHeading>
+                      <AccordionItemButton>
+                          Is free will real or just an illusion?
+                      </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <LoremIpsum p={3} />  
+                  </AccordionItemPanel>
+              </AccordionItem>
+            </Accordion>
+              
+          </TabPanel>
 
-      <TabPanel tabId="vertical-tab-two">
-        <p>Tab content</p>
-      </TabPanel>
+          <TabPanel tabId="vertical-tab-two">
+            <p>Tab content</p>
+          </TabPanel>
 
-      <TabPanel tabId="vertical-tab-three">
-        <p>Tab 3 content</p>
-      </TabPanel>
-    </Tabs>
-        </Content>
-    </div>
+          <TabPanel tabId="vertical-tab-three">
+            <p>Tab 3 content</p>
+          </TabPanel>
+        </Tabs>
+      </Content>
+    </HeaderComponent>
     );
   }
 }
@@ -124,7 +107,13 @@ const HeaderComponent = styled.header`
         z-index:1;
     }
     
+    //Header top
+    .header-top{
+        position:relative;
+        height:9rem;
+        z-index:1;
     }
+
     
 `;
 //content
@@ -135,7 +124,14 @@ const Content = styled.body`
         
     }
    
-   
+    .narrative-header{
+      top:8%;
+      left:50%;
+      position:absolute;
+      text-align:center;
+      transform: translate(-50%,-5%);
+
+  }
 
     button:hover{
         cursor:pointer;

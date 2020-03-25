@@ -1,0 +1,14 @@
+.global-class-name{
+    font-size: 1.5625em;
+    margin: 1%;
+    
+}
+
+.global-class-name:hover ,.global-class-name:active:after{
+  }
+  .icons:hover{
+    fill:var(--main-yellow-hover);
+  }
+   .icons:active,.icons:hover:active {
+      fill: var(--main-yellow-hover);
+  }
