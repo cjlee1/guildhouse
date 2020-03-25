@@ -2,14 +2,44 @@ import React, { Component } from 'react';
 import logo from '../../images/Logo.png'; 
 import { NavLink, Link } from 'react-router-dom';
 import styled from "styled-components";
+import { IconContext } from "react-icons";
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import {  FaArrowLeft, FaArrowRight, FaHome, FaBookOpen ,FaMandalorian} from "react-icons/fa";
+import { createBrowserHistory } from 'history';
+import { config } from '@fortawesome/fontawesome-svg-core';
+
+config.autoAddCss = true;
 
 class Compendium extends Component {
+  constructor(props){
+    super(props);
+    this.goNext = this.goNext.bind(this);
+    this.goBack = this.goBack.bind(this); // i think you are missing this
+ }
+ goNext(){
+  this.props.history.goForward();
+  alert(this.props.history.goForward());
+}
+ goBack(){
+     this.props.history.goBack();
+ }
   render() {
     return (
     <HeaderComponent className="main-compendium-container"> 
       <div className="header-top">
+      <IconContext.Provider value={{ color: "white", className: "global-class-name", width:"250px" }}>
+          <FaArrowLeft onClick={this.goBack}  fixedWidth   />
+          <FaArrowRight onClick={this.goNext} viewBox='0 30 448 512'/>
+          <FaHome />
+          <FaBookOpen/>
+      </IconContext.Provider>
+
         <Logo  className="logo" alt="Guildhouse"> 
         </Logo>
+        <IconContext.Provider value={{ color: "white", className: "global-class-name" }}>
+          
+          <FaMandalorian/>
+      </IconContext.Provider>
       </div>
       <Content>
         <Grid>

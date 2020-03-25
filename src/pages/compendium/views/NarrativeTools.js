@@ -14,6 +14,7 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
+import { NavLink,Link } from 'react-router-dom';
 
 class NarrativeTools extends Component {
   render() {
@@ -22,8 +23,9 @@ class NarrativeTools extends Component {
 
      <div className="main-narrative-tools-container"> 
         <HeaderComponent className="header-top">
-            <Logo  alt="Guildhouse" className="Logo" >
+          <NavLink to="/"><Logo  alt="Guildhouse" className="Logo" >
             </Logo>
+          </NavLink>
         </HeaderComponent>
         <Content>
         <h1 className="narrative-header">Narrative Tools</h1>    

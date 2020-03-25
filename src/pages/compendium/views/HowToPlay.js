@@ -6,6 +6,7 @@ import { Tab, TabPanel, Tabs, TabList } from "react-web-tabs";
 import "../../../css/Tab.css";
 import { LoremIpsum } from 'react-lorem-ipsum';
 
+
 import {
   Accordion,
   AccordionItem,
@@ -14,15 +15,38 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
+import { NavLink,Link } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import {  IoIosArrowBack, IoIosArrowForward, IoIosHome } from "react-icons/io";
+import { IconContext } from "react-icons";
+
 class HowToPlay extends Component {
+  constructor(props){
+    super(props);
+    this.goNext = this.goNext.bind(this);
+    this.goBack = this.goBack.bind(this); // i think you are missing this
+ }
+ goNext(){
+  this.props.history.goForward();
+  alert(this.props.history.goForward());
+}
+ goBack(){
+     this.props.history.goBack();
+ }
   render() {
     return (
      
-
+      
     <div className="main-how-to-play-container"> 
         <HeaderComponent className="header-top">
-            <Logo  alt="Guildhouse" className="Logo" >
+        <IconContext.Provider value={{ color: "white", className: "global-class-name" }}>
+          <IoIosArrowBack onClick={this.goBack}   />
+          <IoIosArrowForward onClick={this.goNext} />
+          <IoIosHome />
+      </IconContext.Provider>
+          <NavLink to="/compendium"><Logo  alt="Guildhouse" className="Logo" >
             </Logo>
+          </NavLink>
         </HeaderComponent>
         <Content>
         

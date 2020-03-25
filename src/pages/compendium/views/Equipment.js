@@ -14,6 +14,7 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
+import { NavLink,Link } from 'react-router-dom';
 
 class Equipment extends Component {
   render() {
@@ -22,8 +23,8 @@ class Equipment extends Component {
 
         <div className="main-equipment-container"> 
         <HeaderComponent className="header-top">
-            <Logo  alt="Guildhouse" className="Logo" >
-            </Logo>
+            <NavLink to="/"><Logo  alt="Guildhouse" className="Logo" >
+            </Logo></NavLink>
         </HeaderComponent>
         <Content>
         <h1 className="narrative-header">Equipment</h1>    
