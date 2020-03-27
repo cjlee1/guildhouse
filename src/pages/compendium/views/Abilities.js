@@ -43,22 +43,42 @@ class Abilities extends Component {
     return tabs
   };
 
+  createTabPanels(object){
+    let tabPanels = [];
+
+    const object_keys = Object.keys(object);
+    object_keys.forEach(key =>{
+      tabPanels.push(object[key].map(elem => 
+        (<TabPanel tabId={elem.class}>
+          {elem.class}
+        </TabPanel>)
+      ))
+    });
+    return tabPanels
+  };
+
   render() {
     const tabLabels = this.createTabLabels(classes);
     const tabs = this.createTabs(tabLabels);
+    const tabPanels = this.createTabPanels(classes);
 
     return (
-    <HeaderComponent className="main-narrative-tools-container"> 
+    <HeaderComponent> 
       <div className="header-top">
         <HeaderTop/>
       </div>
 
       <Content>
+        <h1 className="narrative-header">Abilities</h1>    
+  
         <Tabs vertical>
           <TabList>
             {tabs}
           </TabList>
+          {tabPanels}
+
         </Tabs>
+
       </Content>
     
     </HeaderComponent>
