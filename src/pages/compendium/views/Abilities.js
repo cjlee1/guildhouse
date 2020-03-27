@@ -31,7 +31,7 @@ class Abilities extends Component {
     let tabs = [];
     
     tabLabels.forEach(elem => {
-      tabs.push(<Tab>
+      tabs.push(<Tab tabFor={elem.label}>
         {this.capitalizeWord(elem.label)}
         </Tab>);
 
@@ -66,6 +66,7 @@ class Abilities extends Component {
   }
 }
 export default Abilities; 
+
 //Header Container
 const HeaderComponent = styled.header`
   .changelog-Btn {
