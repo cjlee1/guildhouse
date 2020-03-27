@@ -1,0 +1,259 @@
+{
+    "striker": [
+        {
+            "role": "Striker",
+            "class": "Beastmaster",
+            "description": "Rush the battlefield with a companion that acts like an independent second character.",
+            "attributes_used": "Vitality"
+        },
+        {
+            "role": "Striker",
+            "class": "Berserker",
+            "description": "Deal deadly melee damage when you expose yourself to enemy attacks.",
+            "attributes_used": "Strength and Force",
+            "required_loadout": "Melee Weapon",
+            "core_ability": "Relentless Momentum",
+            "core_ability_description": "Once per turn after the Berserker defeats an enemy, you gain an extra action."
+        },
+        {
+            "role": "Striker",
+            "class": "Cavalier",
+            "description": "Charge through the battlefield on a personalized mount.",
+            "attributes_used": "Strength and Vitality",
+            "required_loadout": "Melee Weapon",
+            "core_ability": "Ride as One",
+            "core_ability_description": "Once per combat, while mounted on your mount, you can use a Free Action to have Advantage on all attack rolls made as part of your next Action this turn."
+        },
+        {
+            "role": "Striker",
+            "class": "Conjuror",
+            "description": "Summon up to a handful of strong minions that can move and attack at your command.",
+            "attributes_used": "Force",
+            "required_loadout": "Spell Style",
+            "core_ability": "Puppet Master",
+            "core_ability_description": "You equip \"Additional Conjuration\" for free. You can still equip Additional Conjuration again for 3 AP. Crusader Blessing of Vigor: \u200bAdd 15 to your maximum health."
+        },
+        {
+            "role": "Striker",
+            "class": "Crusader",
+            "description": "Regenerate your own health while dishing out melee damage.",
+            "attributes_used": "Strength and Force",
+            "required_loadout": "Melee Weapon"
+        },
+        {
+            "role": "Striker",
+            "class": "Duelist",
+            "description": "A melee combatant who's attacks get stronger with the more attacks it lands.",
+            "attributes_used": "Dexterity",
+            "required_loadout": "Melee Weapon",
+            "core_ability": "Unrelenting Force",
+            "core_ability_description": "At the start of the Chapter, choose one combat ability that targets one enemy and has an attack roll. Every time you use this ability and you miss, you regain use of that ability."
+        },
+        {
+            "role": "Striker",
+            "class": "Mage",
+            "description": "Deal raw ranged damage against one or many enemies.",
+            "attributes_used": "Force",
+            "required_loadout": "Spell Style",
+            "core_ability": "Arcane Conduit",
+            "core_ability_description": "Once per combat, after using an ability that uses an Action and targets at least one enemy, deal 5 Arcane damage to any enemy you had targeted."
+        },
+        {
+            "role": "Striker",
+            "class": "Shapeshifter",
+            "description": "Transform into your custom wild form to deal high damage.",
+            "attributes_used": "Strength or Vitality",
+            "required_loadout": "Spell Style",
+            "core_ability": "Twisted Spirit",
+            "core_ability_description": "Gain one additional trait in your Wild Form."
+        },
+        {
+            "role": "Striker",
+            "class": "Sniper",
+            "description": "Precise and deadly long range damage that rewards clever positioning.",
+            "attributes_used": "Dexterity",
+            "required_loadout": "Ranged Weapon",
+            "core_ability": "Deadly Aim",
+            "core_ability_description": "Once per Combat, when an attack misses, you can choose for this attack to instead hit."
+        },
+        {
+            "role": "Striker",
+            "class": "Spellblade",
+            "description": "Rapid movement through teleportation combined with swift and accurate melee strikes.",
+            "attributes_used": "Dexterity and Intellect",
+            "required_loadout": "Melee Weapon",
+            "core_ability": "Overflow Charge",
+            "core_ability_description": "If one of your melee weapon attacks reduces a character to 0 HP, any excess damage is added to the damage of your next melee attack that hits before the end of your next turn."
+        },
+        {
+            "role": "Striker",
+            "class": "Tinkerer",
+            "description": "Construct automatons that follow preassigned tasks to disable and damage enemies.",
+            "attributes_used": "Intellect",
+            "core_ability": "Whirlwind Assembly",
+            "core_ability_description": "You have an extra action on your first turn in every combat."
+        },
+        {
+            "role": "Striker",
+            "class": "Warrior",
+            "description": "Brutal and straightforward melee strikes.",
+            "attributes_used": "Strength and Force",
+            "required_loadout": "Melee Weapon",
+            "core_ability": "Seasoned Veteran",
+            "core_ability_description": "Gain 1 action surge."
+        }
+    ],
+    "sapper": [
+        {
+            "role": "Sapper",
+            "class": "Alchemist",
+            "description": "Splash concoctions and toxins on enemies from short range with a variety of debilitating effects.",
+            "attributes_used": "Intellect",
+            "required_loadout": "Spell Style",
+            "core_ability": "Deadly Concoction",
+            "core_ability_description": "Once per turn, deal 1d6 bonus damage on hit against rooted, immobilised, or slowed enemies"
+        },
+        {
+            "role": "Sapper",
+            "class": "Assassin",
+            "description": "Disable your target before dealing lethal melee damage.",
+            "attributes_used": "Dexterity",
+            "required_loadout": "Melee Weapon",
+            "core_ability": "Patient Precision",
+            "core_ability_description": "Once per turn, deal 1d6 bonus damage on hit against staggered, stunned, or dazed enemies Beastmaster Best Friend:\u200b Your Beast Gains 3AP"
+        },
+        {
+            "role": "Sapper",
+            "class": "Knight",
+            "description": "Holds the line by disabling enemies and preventing any from getting past.",
+            "attributes_used": "Strength",
+            "required_loadout": "Melee weapon",
+            "core_ability": "Signature Strike",
+            "core_ability_description": "Choose one per combat or per Chapter ability you have equipped that has an attack roll and targets one character. Add Stunned (1) to the hit, or Stunned (2) if it is a Chapter ability."
+        },
+        {
+            "role": "Sapper",
+            "class": "Necromancer",
+            "description": "Summons many underlings that restrict movement and trap enemies.",
+            "attributes_used": "Force",
+            "required_loadout": "Spell Style",
+            "core_ability": "Life Tap",
+            "core_ability_description": "Lose 15 Health, but gain one action for this turn."
+        },
+        {
+            "role": "Sapper",
+            "class": "Runemaster",
+            "description": "Potent melee range strikes that inflict magical hindrances.",
+            "attributes_used": "Strength and Intellect",
+            "required_loadout": "Melee weapon",
+            "core_ability": "Weapon Charge",
+            "core_ability_description": "Before or at the very start of any combat, choose an At-Will spellyou have equipped that takes an action and has an attack roll. You then place a rune that represents the \u201con hit\u201d effect of your chosen spell onto your person or weapons. Once per combat at any time you hit with an ability that deals damage, you can choose to also apply the \u201con hit\u2019 effect of your stored rune. First resolve the effect of your ability\u2019s hit before resolving the effect of the \u201con hit\u201d of your stored spell."
+        },
+        {
+            "role": "Sapper",
+            "class": "Scoundrel",
+            "description": "Move quickly and make melee attacks which pin down enemies.",
+            "attributes_used": "Dexterity",
+            "required_loadout": "Melee Weapon",
+            "core_ability": "Nuisance",
+            "core_ability_description": "You can make 2 reactions in a round instead of 1."
+        },
+        {
+            "role": "Sapper",
+            "class": "Spellbow",
+            "description": "Long Ranged magical attacks that cause impairments to enemies in a variety of ways.",
+            "attributes_used": "Dexterity and Intellect",
+            "required_loadout": "Ranged Weapon",
+            "core_ability": "Arcane Reserves",
+            "core_ability_description": "At the start of each combat, choose one of your combat abilities. You may use that combat ability twice during this encounter."
+        },
+        {
+            "role": "Sapper",
+            "class": "Trapper",
+            "description": "Place dangerous traps on the front line while deftly weaving past enemy attacks.",
+            "attributes_used": "Dexterity",
+            "core_ability": "Untouchable",
+            "core_ability_description": "The first attack made against you by each enemy in combat is made with disadvantage."
+        },
+        {
+            "role": "Sapper",
+            "class": "Warden",
+            "description": "Powerful spells that target all or most enemies on the battlefield.",
+            "attributes_used": "Vitality",
+            "required_loadout": "Spell Style",
+            "core_ability": "Natural Power",
+            "core_ability_description": "At the start of a Chapter, choose one of your equipped Chapter Abilities that uses an Action. You may use this Ability twice per Chapter."
+        },
+        {
+            "role": "Sapper",
+            "class": "Warlock",
+            "description": "Curse your target with ranged magics and sinister incantations, sometimes weakening yourself to weaken them more.",
+            "attributes_used": "Force",
+            "required_loadout": "Spell Style",
+            "core_ability": "Sensory Distortion",
+            "core_ability_description": "Once per turn, deal 1d6 bonus damage on hit against numbed, disoriented, drained, or weakened enemies."
+        },
+        {
+            "role": "Sapper",
+            "class": "Wizard",
+            "description": "Specialize in disabling and disrupting groups of enemies from afar.",
+            "attributes_used": "Intellect",
+            "required_loadout": "Spell Style",
+            "core_ability": "Magical Tactician",
+            "core_ability_description": "Whenever you use an ability that requires a total of two or more attack rolls or skill checks and you miss or fail all of them, then you can immediately use another ability that uses an action, as long as it's not the same one."
+        }
+    ],
+    "support": [
+        {
+            "role": "Support",
+            "class": "Anatomist",
+            "description": "Use concoctions and operations to bolster an adjacent ally to incredible levels.",
+            "attributes_used": "Intellect",
+            "core_ability": "Rapid Transfusion",
+            "core_ability_description": "Whenever you use an Ability that targets only an Ally, you can choose to lose 10 health and your Ally heals 10 Health."
+        },
+        {
+            "role": "Support",
+            "class": "Champion",
+            "description": "Frontline melee fighter whose leadership increases the damage potential of nearby allies.",
+            "attributes_used": "Strength and Force",
+            "required_loadout": "Melee Weapon",
+            "core_ability": "Lead from the Front",
+            "core_ability_description": "When you become battered, choose one per combat ability that you have already used. You may use it again."
+        },
+        {
+            "role": "Support",
+            "class": "Leader",
+            "description": "Tactical abilities that bolster nearby allies and prevents them from being surrounded.",
+            "attributes_used": "Force",
+            "core_ability": "Move As One",
+            "core_ability_description": "Once per combat, use this ability to give all allies and yourself one extra move action on their next turn."
+        },
+        {
+            "role": "Support",
+            "class": "Medic",
+            "description": "A fast moving healer who can patch up adjacent allies with powerful heals and pull injured allies from the fray.",
+            "attributes_used": "Vitality and Dexterity",
+            "core_ability": "First Response",
+            "core_ability_description": "Whenever you use an ability that targets one Ally and heals them to some degree, remove one Affliction point from them."
+        },
+        {
+            "role": "Support",
+            "class": "Mender",
+            "description": "Provides healing and buffs from a long range to allies on the battlefield.",
+            "attributes_used": "Vitality",
+            "required_loadout": "Spell Style",
+            "core_ability": "Specialised Healer",
+            "core_ability_description": "Add 1d6 to the healing effects of all combat or chapter abilities you have equipped."
+        },
+        {
+            "role": "Support",
+            "class": "Thaumaturge",
+            "description": "Strikes with ranged magical attacks that can bolster allies near the targeted enemy.",
+            "attributes_used": "Vitality",
+            "required_loadout": "Spell Style",
+            "core_ability": "Magic Veil",
+            "core_ability_description": "Choose one Combat or Chapter Ability that at least targets one ally and uses an Action. One targeted ally gains Shielded (2) or Hasted (2), your choice."
+        }
+    ]
+}
