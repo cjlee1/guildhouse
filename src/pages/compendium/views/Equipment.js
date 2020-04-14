@@ -1,10 +1,10 @@
 
 import React, { Component } from 'react';
-import logo from '../../../images/Logo.png'; 
+// import logo from '../../../images/Logo.png'; 
 import styled from "styled-components";
 import { Tab, TabPanel, Tabs, TabList } from "react-web-tabs";
 import "../../../css/Tab.css";
-import { LoremIpsum } from 'react-lorem-ipsum';
+// import { LoremIpsum } from 'react-lorem-ipsum';
 
 import {
   Accordion,
@@ -14,7 +14,7 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
-import { NavLink,Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class Equipment extends Component {
   render() {

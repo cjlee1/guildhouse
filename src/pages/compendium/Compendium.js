@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import logo from '../../images/Logo.png'; 
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from "styled-components";
-import { IconContext } from "react-icons";
+// import { IconContext } from "react-icons";
 // import '@fortawesome/fontawesome-svg-core/styles.css';
-import {  FaArrowLeft, FaArrowRight, FaHome, FaBookOpen ,FaMandalorian} from "react-icons/fa";
-import { createBrowserHistory } from 'history';
+// import {  FaArrowLeft, FaArrowRight, FaHome, FaBookOpen ,FaMandalorian} from "react-icons/fa";
+// import { createBrowserHistory } from 'history';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import "../../css/Header.css";
 import HeaderTop from './components/HeaderTop';
@@ -60,17 +59,17 @@ const Col = styled.div`
   justify-content: center;
 `;
 // Logo
-const Logo= styled.img`
-    // width:20em; if logo is not there
-    height:5rem;
-    position:absolute;
-    top:25%;
-    left:50%;
-    font-family: 'Helvetica Bold', sans-serif;
-    font-size: 3rem;
-    font-weight: 900;
-    transform: translate(-50%,-50%);
-`;
+// const Logo= styled.img`
+//     // width:20em; if logo is not there
+//     height:5rem;
+//     position:absolute;
+//     top:25%;
+//     left:50%;
+//     font-family: 'Helvetica Bold', sans-serif;
+//     font-size: 3rem;
+//     font-weight: 900;
+//     transform: translate(-50%,-50%);
+// `;
 
 
 //Header Container

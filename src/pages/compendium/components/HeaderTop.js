@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from "styled-components";
 import { IconContext } from "react-icons";
 // import '@fortawesome/fontawesome-svg-core/styles.css';
 import {  FaArrowLeft, FaArrowRight, FaHome, FaBookOpen ,FaMandalorian} from "react-icons/fa";
-import { createBrowserHistory } from 'history';
-import { config } from '@fortawesome/fontawesome-svg-core';
+// import { createBrowserHistory } from 'history';
+// import { config } from '@fortawesome/fontawesome-svg-core';
 import "../../../css/Header.css";
 import { withRouter } from 'react-router'
 

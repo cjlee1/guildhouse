@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import logo from '../../../images/Logo.png'; 
+// import logo from '../../../images/Logo.png'; 
 import styled from "styled-components";
 import { Tab, TabPanel, Tabs, TabList } from "react-web-tabs";
 import "../../../css/Tab.css";
@@ -81,16 +81,16 @@ class HowToPlay extends Component {
 }
 export default HowToPlay; 
 //Logo
-const Logo= styled.img`
-    // width:20em; if logo is not there
-    height:5rem;
-    position:absolute;
-    left:50%;
-    font-family: 'Helvetica Bold', sans-serif;
-    font-size: 3rem;
-    font-weight: 900;
-    transform: translate(-50%,-5%);
-`;
+// const Logo= styled.img`
+//     // width:20em; if logo is not there
+//     height:5rem;
+//     position:absolute;
+//     left:50%;
+//     font-family: 'Helvetica Bold', sans-serif;
+//     font-size: 3rem;
+//     font-weight: 900;
+//     transform: translate(-50%,-5%);
+// `;
 //Header Container
 const HeaderComponent = styled.header`
 

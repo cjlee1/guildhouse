@@ -26,7 +26,7 @@
         },
         {
             "role": "Striker",
-            "class": "Conjuror",
+            "class": "Conjurer",
             "description": "Summon up to a handful of strong minions that can move and attack at your command.",
             "attributes_used": "Force",
             "required_loadout": "Spell Style",

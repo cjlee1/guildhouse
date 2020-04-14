@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../../images/Logo.png'; 
-import { NavLink,Link } from 'react-router-dom';
+// import logo from '../../images/Logo.png'; 
+import { NavLink } from 'react-router-dom';
 import styled from "styled-components";
 
 class Hero extends Component {

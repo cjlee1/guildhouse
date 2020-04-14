@@ -1,13 +1,12 @@
 
 import React, { Component } from 'react';
-import logo from '../../../images/Logo.png'; 
 import styled from "styled-components";
 import { Tab, TabPanel, Tabs, TabList } from "react-web-tabs";
 import HeaderTop from '../components/HeaderTop';
 import "../../../css/Tab.css";
-import classes from '../../../data/classes';
-
-
+import classesJson from '../../../data/classes.json';
+import abilitiesJson from '../../../data/abilities.json'
+import ClassView from './ClassView'
 
 class Abilities extends Component {
 
@@ -43,45 +42,52 @@ class Abilities extends Component {
     return tabs
   };
 
-  createTabPanels(object){
-    let tabPanels = [];
+  createTabPanels(classes, abilities){
+    const object_keys = Object.keys(classes);
 
-    const object_keys = Object.keys(object);
-    object_keys.forEach(key =>{
-      tabPanels.push(object[key].map(elem => 
-        (<TabPanel tabId={elem.class}>
-          {elem.class}
-        </TabPanel>)
-      ))
-    });
+    const tabPanels = object_keys.map(classRole => 
+      classes[classRole].map(obj => (
+        <TabPanel tabId={obj.class}>
+          {obj.class}
+          <ClassView
+            classObj={obj}
+            classAbilities={abilities[obj.class.toLowerCase()]}
+            >
+          </ClassView>
+        </TabPanel>
+        )
+      )
+    )
+
     return tabPanels
   };
 
   render() {
-    const tabLabels = this.createTabLabels(classes);
+    const tabLabels = this.createTabLabels(classesJson);
     const tabs = this.createTabs(tabLabels);
-    const tabPanels = this.createTabPanels(classes);
+    const tabPanels = this.createTabPanels(classesJson, abilitiesJson);
 
     return (
-    <HeaderComponent> 
-      <div className="header-top">
-        <HeaderTop/>
-      </div>
+      <div>
+        <HeaderComponent> 
+          <div className="header-top">
+            <HeaderTop/>
+          </div>
 
-      <Content>
-        <h1 className="narrative-header">Abilities</h1>    
-  
-        <Tabs vertical>
-          <TabList>
-            {tabs}
-          </TabList>
-          {tabPanels}
+        </HeaderComponent>
+        <Content>
+          <h1 className="narrative-header">Abilities</h1>    
 
-        </Tabs>
+          <Tabs vertical>
+            <TabList>
+              {tabs}
+            </TabList>
+            {tabPanels}
 
-      </Content>
-    
-    </HeaderComponent>
+          </Tabs>
+
+        </Content>
+    </div>
     );
   }
 }
