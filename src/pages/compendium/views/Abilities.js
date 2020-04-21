@@ -50,7 +50,7 @@ class Abilities extends Component {
         <TabPanel tabId={obj.class}>
           {obj.class}
           <ClassView
-            classObj={obj}
+            classData={obj}
             classAbilities={abilities[obj.class.toLowerCase()]}
             >
           </ClassView>
