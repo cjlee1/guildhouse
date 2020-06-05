@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { Tab, TabPanel, Tabs, TabList } from "react-web-tabs";
 import "../../../css/Tab.css";
 // import { LoremIpsum } from 'react-lorem-ipsum';
+import HeaderTop from "../components/HeaderTop";
 
 import {
   Accordion,
@@ -19,99 +20,103 @@ import { NavLink } from 'react-router-dom';
 class Equipment extends Component {
   render() {
     return (
-     
-
-        <div className="main-equipment-container"> 
-        <HeaderComponent className="header-top">
-            <NavLink to="/"><Logo  alt="Guildhouse" className="Logo" >
-            </Logo></NavLink>
-        </HeaderComponent>
+      <div className="main-equipment-container">
+          <HeaderComponent>
+            <div className="header-top">
+              <HeaderTop />
+            </div>
+          </HeaderComponent>
         <Content>
-        <h1 className="narrative-header">Equipment</h1>    
+          <h1 className="narrative-header">Equipment</h1>
 
-        <Tabs defaultTab="vertical-tab-one" vertical className="vertical-tabs">
-      <TabList>
-        <Tab tabFor="vertical-tab-one">Armor</Tab>
-        <Tab tabFor="vertical-tab-two">Loadouts</Tab>
-        <Tab tabFor="vertical-tab-three">Shields</Tab>
-      </TabList>
+          <Tabs
+            defaultTab="vertical-tab-one"
+            vertical
+            className="vertical-tabs"
+          >
+            <TabList>
+              <Tab tabFor="vertical-tab-one">Armor</Tab>
+              <Tab tabFor="vertical-tab-two">Loadouts</Tab>
+              <Tab tabFor="vertical-tab-three">Shields</Tab>
+            </TabList>
 
-      <TabPanel tabId="vertical-tab-one">
-      <Accordion allowZeroExpanded= "true" >
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        Sturdy Armor
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                  <p>Speed 3, Health +34, Defense +12</p> 
-                  <p>  Speed 3, Health +26, Defense +14 </p>  
-                </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        Balanced Armor
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                <p>Speed 4, Health +26, Defense +12</p> 
-                  <p>Speed 4, Health +26, Defense +10, Grit +2, Reflex +2</p>   
-                </AccordionItemPanel>
-            </AccordionItem>
-        </Accordion>
-            
-      </TabPanel>
-
-      <TabPanel tabId="vertical-tab-two">
-        <Accordion allowZeroExpanded= "true" >
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        Loadout
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                  <p>Weapons and Spell Styles are all sorted in something called ‘Loadouts.’ Loadouts represent a single set of weapons that you hold during combat. All characters can carry two loadouts. Whether it's a sword and shield, a massive great axe, or powerful magic, loadouts are highly customizable, and there is almost certainly one that fits your playstyle or the character of your dreams.</p> 
-                    
-                </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        Magic Loadout
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                <p>There are two types of Loadouts, Weapon loadouts and Magic Loadouts. Weapon Loadouts are made up of physical weapons such as swords or bows and use Strength or Dexterity to attack. The others are Magic Loadouts, which represent the method and style by which you cast spells and magical abilities can use either Vitality, Intellect, or Force to use.
-    Classes do not have a restriction on which type of Loadout you want to take, though each class typically uses abilities that require one or the other.
-</p> 
-                   
-                </AccordionItemPanel>
-            </AccordionItem>
-        </Accordion>
-      </TabPanel>
-
-      <TabPanel tabId="vertical-tab-three">
-        <Accordion allowZeroExpanded= "true" >
+            <TabPanel tabId="vertical-tab-one">
+              <Accordion allowZeroExpanded="true">
                 <AccordionItem>
-                    <AccordionItemHeading>
-                        <AccordionItemButton>
-                            Physical shield
-                        </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                    <p>Shield - Defense +4</p> 
-                    
-                    </AccordionItemPanel>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>Sturdy Armor</AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>Speed 3, Health +34, Defense +12</p>
+                    <p> Speed 3, Health +26, Defense +14 </p>
+                  </AccordionItemPanel>
                 </AccordionItem>
-                
-            </Accordion>
-      </TabPanel>
-    </Tabs>
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>Balanced Armor</AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>Speed 4, Health +26, Defense +12</p>
+                    <p>Speed 4, Health +26, Defense +10, Grit +2, Reflex +2</p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+              </Accordion>
+            </TabPanel>
+
+            <TabPanel tabId="vertical-tab-two">
+              <Accordion allowZeroExpanded="true">
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>Loadout</AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      Weapons and Spell Styles are all sorted in something
+                      called ‘Loadouts.’ Loadouts represent a single set of
+                      weapons that you hold during combat. All characters can
+                      carry two loadouts. Whether it's a sword and shield, a
+                      massive great axe, or powerful magic, loadouts are highly
+                      customizable, and there is almost certainly one that fits
+                      your playstyle or the character of your dreams.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>Magic Loadout</AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      There are two types of Loadouts, Weapon loadouts and Magic
+                      Loadouts. Weapon Loadouts are made up of physical weapons
+                      such as swords or bows and use Strength or Dexterity to
+                      attack. The others are Magic Loadouts, which represent the
+                      method and style by which you cast spells and magical
+                      abilities can use either Vitality, Intellect, or Force to
+                      use. Classes do not have a restriction on which type of
+                      Loadout you want to take, though each class typically uses
+                      abilities that require one or the other.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+              </Accordion>
+            </TabPanel>
+
+            <TabPanel tabId="vertical-tab-three">
+              <Accordion allowZeroExpanded="true">
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>Physical shield</AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>Shield - Defense +4</p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+              </Accordion>
+            </TabPanel>
+          </Tabs>
         </Content>
-    </div>
+      </div>
     );
   }
 }

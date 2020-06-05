@@ -47,8 +47,8 @@ class Compendium extends Component {
 }
 export default Compendium; 
 
-const Grid= styled.div``;
-const Row= styled.div`
+const Grid = styled.div``;
+const Row = styled.div`
   display:flex;
   align-items:center;
   justify-content: center;
