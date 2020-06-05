@@ -1,0 +1,34 @@
+//Folder organization 
+
+{root:
+  >folder 
+    >subfolder (.extension of files)
+}
+
+root:
+  - .gitignore
+  - LICENSE
+  - package.json
+  - README.md
+  - yarn.lock
+  >node_modules
+    - ...
+  >public
+    - index.html
+    - ...
+  >src
+    - App.js
+    - index.js
+    - serviceWorker.js
+    >data (.json)
+    >images (.jpg, .png)
+    >views
+      - Home
+      - Compendium
+      - ClassCatalog
+    >components
+      - ClassCard.js
+      - AppBar.js
+      - AbilityCard.js
+      - ExitButton.js
+      
